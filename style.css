@@ -1,119 +1,130 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
   color: #333;
-  background-color: #f5f5f5;
-}
-
-header {
-  background-color: #2e8b57;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
   display: flex;
-  justify-content: center;
-  gap: 25px;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-nav a {
-  text-decoration: none;
+header, footer {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
   color: white;
-  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-nav a:hover {
-  text-decoration: underline;
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1px;
 }
-
-/* Контентні секції */
-section {
-  background-color: white;
-  margin: 20px auto;
-  padding: 40px;
-  max-width: 1000px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-section h2 {
-  color: #2e8b57;
-  margin-bottom: 20px;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin: 10px 0;
-}
-
 
 footer {
-  background-color: #2e8b57;
-  color: white;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+main {
+  flex: 1;
+  padding: 30px 20px;
+}
+
+.products {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 220px;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.25s, box-shadow 0.25s;
+  cursor: pointer;
 }
 
-
-ul {
-  padding-left: 20px;
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 18px rgba(0,0,0,0.2);
 }
 
-
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  section {
-    padding: 20px;
-  }
-}
-#payment-scheme {
-  background-color: #f3f3f3;
-  padding: 30px;
-  text-align: center;
-  margin-top: 40px;
-  border-top: 2px solid #ccc;
+.card h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #007bff;
 }
 
-#payment-scheme h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
+.card p {
+  font-size: 16px;
+  margin: 5px 0 15px;
+  font-weight: bold;
+  color: #222;
 }
 
-#step-box {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-#step-text {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-#next-step {
-  padding: 10px 20px;
-  background-color: #4caf50;
+.buy-btn, #payBtn {
+  background: linear-gradient(135deg, #28a745, #34d058);
   color: white;
   border: none;
+  padding: 12px 16px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
 }
 
-#next-step:hover {
-  background-color: #45a049;
+.buy-btn:hover, #payBtn:hover {
+  background: linear-gradient(135deg, #218838, #28a745);
+  transform: scale(1.05);
 }
- 
+
+#paymentBox, #thankBox {
+  text-align: center;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  margin: 30px auto;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  animation: fadeIn 0.5s ease;
+}
+
+.hidden { display: none; }
+
+#cardNumber {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+#cardNumber:focus {
+  border: 1px solid #007bff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.5);
+  outline: none;
+}
+
+#payBtn {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  font-size: 16px;
+}
+
+#payBtn:hover {
+  background: linear-gradient(135deg, #0056b3, #0096c7);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
