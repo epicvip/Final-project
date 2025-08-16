@@ -6,44 +6,149 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>📱 Магазин телефонів</h1>
+    <h1>📱 Інтернет-магазин телефонів</h1>
+    <p>Купуй сучасні смартфони за найкращими цінами</p>
   </header>
+
+  <section class="about">
+    <h2>Про наш магазин</h2>
+    <p>
+      Ми пропонуємо тільки оригінальні смартфони від офіційних виробників.  
+      У нас ви знайдете найновіші моделі з гарантією та швидкою доставкою по Україні.  
+      Обирайте кращий телефон для себе вже сьогодні!
+    </p><!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Магазин телефонів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="about">
+    <h2>Ласкаво просимо до SmartShop!</h2>
+    <p>
+      Ми спеціалізуємося на продажу найкращих смартфонів від провідних світових брендів.  
+      У нашому асортименті ви знайдете:
+    </p>
+    <ul>
+      <li>📱 Флагманські моделі Samsung, iPhone, Xiaomi та інших брендів;</li>
+      <li>⚡ Смартфони з потужними процесорами для ігор та роботи;</li>
+      <li>🔋 Телефони з великими акумуляторами для довгої роботи;</li>
+      <li>📷 Камери з професійною якістю для фото і відео;</li>
+      <li>💰 Вигідні ціни та постійні знижки для клієнтів.</li>
+    </ul>
+
+    <p>
+      Чому саме ми?
+    </p>
+    <ol>
+      <li>Гарантія на всі товари від 12 місяців.</li>
+      <li>Доставка по всій Україні протягом 1–3 днів.</li>
+      <li>Можливість повернення чи обміну протягом 14 днів.</li>
+      <li>Зручна система онлайн-оплати прямо на сайті.</li>
+      <li>Регулярні акції та бонуси для постійних покупців.</li>
+    </ol>
+
+    <p>
+      Ми дбаємо про комфорт кожного клієнта, тому купівля смартфона у нас буде швидкою, вигідною та безпечною.  
+      Обирайте свій новий телефон вже сьогодні!
+    </p>
+  </section>
+
 
   <main>
     <section class="products">
+   
       <div class="card">
-        <h2>iPhone 15</h2>
-        <p>Ціна: 45 000₴</p>
-        <button class="buy-btn">Купити</button>
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium_AV1?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1692924857895" alt="iPhone 15 Pro">
+        <h2>iPhone 15 Pro</h2>
+        <p>Ціна: 40 000 грн</p>
+        <p>Пам’ять: 256GB | Камера: 48MP | Екран: 6.1"</p>
+        <button class="buy-btn" onclick="buy('iPhone 15 Pro')">Купити</button>
       </div>
 
+    
       <div class="card">
+        <img src="https://my-apple.com.ua/image/catalog/products/Samsung/galaxy-s-24/s-24-black-ultra-2.png">
         <h2>Samsung Galaxy S24</h2>
-        <p>Ціна: 39 000₴</p>
-        <button class="buy-btn">Купити</button>
+        <p>Ціна: 38 500 грн</p>
+        <p>Пам’ять: 256GB | Камера: 200MP | Екран: 6.7"</p>
+        <button class="buy-btn" onclick="buy('Samsung Galaxy S24')">Купити</button>
+      </div>
+
+    
+      <div class="card">
+        <img src="https://cdn.movertix.com/media/catalog/product/cache/image/1200x/x/i/xiaomi-14-ultra-5g-dual-sim-black-512gb-and-16gb-ram.jpg" >
+        <h2>Xiaomi 14 Ultra</h2>
+        <p>Ціна: 32 000 грн</p>
+        <p>Пам’ять: 512GB | Камера: 50MP | Екран: 6.73"</p>
+        <button class="buy-btn" onclick="buy('Xiaomi 14 Ultra')">Купити</button>
+      </div>
+
+    
+      <div class="card">
+        <img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-8-pro-1.jpg" alt="Google Pixel 8 Pro">
+        <h2>Google Pixel 8 Pro</h2>
+        <p>Ціна: 34 000 грн</p>
+        <p>Пам’ять: 256GB | Камера: 50MP | Екран: 6.7"</p>
+        <button class="buy-btn" onclick="buy('Google Pixel 8 Pro')">Купити</button>
+      </div>
+
+     
+      <div class="card">
+        <img src="https://content.rozetka.com.ua/goods/images/big/374115351.jpg">
+        <h2>Huawei P60 Pro</h2>
+        <p>Ціна: 28 000 грн</p>
+        <p>Пам’ять: 256GB | Камера: 48MP | Екран: 6.6"</p>
+        <button class="buy-btn" onclick="buy('Huawei P60 Pro')">Купити</button>
+      </div>
+
+      
+      <div class="card">
+        <img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12r-1.jpg" alt="OnePlus 12R">
+        <h2>OnePlus 12R</h2>
+        <p>Ціна: 22 000 грн</p>
+        <p>Пам’ять: 256GB | Камера: 50MP | Екран: 6.78"</p>
+        <button class="buy-btn" onclick="buy('OnePlus 12R')">Купити</button>
+      </div>
+
+      
+      <div class="card">
+        <img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-find-x7-ultra-1.jpg" alt="Oppo Find X7 Ultra">
+        <h2>Oppo Find X7 Ultra</h2>
+        <p>Ціна: 26 500 грн</p>
+        <p>Пам’ять: 512GB | Камера: 50MP | Екран: 6.82"</p>
+        <button class="buy-btn" onclick="buy('Oppo Find X7 Ultra')">Купити</button>
+      </div>
+
+    
+      <div class="card">
+        <img src="https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-1-v-1.jpg" alt="Sony Xperia 1 V">
+        <h2>Sony Xperia 1 V</h2>
+        <p>Ціна: 29 000 грн</p>
+        <p>Пам’ять: 256GB | Камера: 48MP | Екран: 6.5"</p>
+        <button class="buy-btn" onclick="buy('Sony Xperia 1 V')">Купити</button>
       </div>
     </section>
 
-    <section id="paymentBox" class="hidden">
-      <h2>Оплата</h2>
-      <label>
-        Номер картки:
-        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
-      </label>
+    
+    <div id="paymentBox" class="hidden">
+      <h2>Оплата: <span id="productName"></span></h2>
+      <input type="text" id="cardNumber" placeholder="Введіть номер картки">
       <button id="payBtn">Готово</button>
-    </section>
+    </div>
 
-    <section id="thankBox" class="hidden">
+
+    <div id="thankBox" class="hidden">
       <h2>✅ Дякуємо за купівлю!</h2>
-    </section>
+      <p>Ваше замовлення успішно оформлено.</p>
+    </div>
   </main>
 
-  <footer>
-    <p>© 2025 Магазин телефонів</p>
-  </footer>
-
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 
